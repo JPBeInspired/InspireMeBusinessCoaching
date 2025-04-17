@@ -168,7 +168,7 @@ export default function Home() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="text-5xl md:text-7xl font-bold text-text-primary mb-6 leading-tight">
-              Escape the 9–5. Build the Business You Deserve.
+              Live the life you deserve
             </h1>
             <p className="text-xl text-text-secondary mb-8 max-w-2xl leading-relaxed">
               We help ambitious individuals launch, grow, and scale businesses that align with their purpose, passion, and potential.
