@@ -1,71 +1,74 @@
 import { useState } from 'react';
-import { ArrowRight, Users, Briefcase, MessageSquare, Dumbbell } from 'lucide-react';
+import { ArrowRight, Rocket, Briefcase, Brain, Users, Star } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { submitContactForm } from '../lib/contact';
 import toast from 'react-hot-toast';
 
 const CONTACT_TYPES = [
   {
-    id: 'trainer',
-    label: 'Personal Trainer',
-    icon: Users
+    id: 'aspiring',
+    label: 'Aspiring Entrepreneur',
+    icon: Rocket,
+    description: 'Ready to start your first business'
   },
   {
-    id: 'gym-owner',
-    label: 'Gym Owner',
-    icon: Briefcase
+    id: 'business-owner',
+    label: 'Small Business Owner',
+    icon: Briefcase,
+    description: 'Looking to grow or scale'
   },
   {
-    id: 'general',
-    label: 'General Public',
-    icon: MessageSquare
+    id: 'curious',
+    label: 'Business Curious',
+    icon: Brain,
+    description: 'Exploring my options'
   }
 ];
 
 const HELP_OPTIONS = {
-  trainer: [
-    { value: 'product', label: 'Product Question' },
-    { value: 'coaching', label: 'Coaching or Services' },
-    { value: 'career', label: 'Career Opportunities' },
-    { value: 'support', label: 'Support' },
+  aspiring: [
+    { value: 'coaching', label: 'Business Coaching' },
+    { value: 'program', label: 'Launch Program' },
+    { value: 'resources', label: 'Business Resources' },
+    { value: 'community', label: 'Join Community' },
     { value: 'other', label: 'Something Else' }
   ],
-  'gym-owner': [
-    { value: 'recruitment', label: 'PT Recruitment' },
-    { value: 'management', label: 'PT Management' },
-    { value: 'partnership', label: 'Business Partnership' },
-    { value: 'support', label: 'Support' },
+  'business-owner': [
+    { value: 'scaling', label: 'Scaling Strategy' },
+    { value: 'systems', label: 'Business Systems' },
+    { value: 'coaching', label: 'Growth Coaching' },
+    { value: 'partnership', label: 'Partnership Opportunities' },
     { value: 'other', label: 'Something Else' }
   ],
-  general: [
-    { value: 'product', label: 'Product Question' },
-    { value: 'training', label: 'Personal Training' },
-    { value: 'feedback', label: 'Feedback' },
+  curious: [
+    { value: 'info', label: 'General Information' },
+    { value: 'discovery', label: 'Discovery Call' },
+    { value: 'resources', label: 'Free Resources' },
     { value: 'other', label: 'Something Else' }
   ]
 };
 
 const QUICK_LINKS = [
   {
-    title: 'Interested in Coaching?',
-    description: 'Explore our coaching services and programs',
+    title: 'Interested in Business Coaching?',
+    description: 'Explore our coaching programs and find the right path for your business.',
     icon: Users,
-    link: '/products',
+    link: '/services',
     color: 'text-accent-primary'
   },
   {
-    title: 'Interested in PT Management or recruitment',
-    description: 'See what we offer',
+    title: 'Need Help Starting or Scaling?',
+    description: "Let's talk strategy, systems, and how we can support your next step.",
     icon: Briefcase,
-    link: '/products',
+    link: '/services',
     color: 'text-alt-purple'
   },
   {
-    title: 'Ready to get fit?',
-    description: 'Find out more',
-    icon: Dumbbell,
-    link: '/products',
-    color: 'text-alt-purple'
+    title: 'Want to Join Our Community?',
+    description: 'Connect with other ambitious business owners inside our coaching hub.',
+    icon: Star,
+    link: 'https://www.skool.com/bifc/about?ref=90b36d6c2a614936b70aa82065a41863',
+    color: 'text-alt-coral'
   }
 ];
 
@@ -123,7 +126,7 @@ export default function Contact() {
           <div className="relative h-full">
             <img
               src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=1920"
-              alt="Team discussion"
+              alt="Business discussion"
               className="absolute inset-0 w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-background-main/95 via-background-main/80 to-transparent" />
@@ -134,11 +137,10 @@ export default function Contact() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="text-5xl md:text-7xl font-bold text-text-primary mb-6 leading-tight">
-              Have a Question? Let's Talk.
+              Got a Question? Let's Build Something Great Together.
             </h1>
             <p className="text-xl text-text-secondary mb-8 max-w-2xl leading-relaxed">
-              Whether you're a coach, gym owner, or just starting your journey — we're here for you.
-              From product questions to partnership opportunities, we'll get back to you within 24 hours.
+              Whether you're launching your first venture, scaling an existing business, or exploring a new direction — we're here to help. From program questions to partnership opportunities, we'll get back to you within 24 hours.
             </p>
           </div>
         </div>
@@ -160,16 +162,17 @@ export default function Contact() {
                         key={type.id}
                         type="button"
                         onClick={() => setContactType(type.id)}
-                        className={`p-4 flex flex-col items-center justify-center border transition-colors ${
+                        className={`p-6 flex flex-col items-center justify-center border text-center transition-colors ${
                           contactType === type.id
                             ? 'border-accent-primary bg-background-card'
                             : 'border-ui-border hover:border-accent-primary'
                         }`}
                       >
-                        <type.icon className={`h-6 w-6 mb-2 ${
+                        <type.icon className={`h-8 w-8 mb-3 ${
                           contactType === type.id ? 'text-accent-primary' : 'text-text-secondary'
                         }`} />
-                        <span className="text-text-primary text-sm">{type.label}</span>
+                        <span className="text-text-primary font-medium mb-2">{type.label}</span>
+                        <span className="text-text-secondary text-sm">{type.description}</span>
                       </button>
                     ))}
                   </div>
@@ -244,22 +247,20 @@ export default function Contact() {
                   </div>
                 </div>
 
-                {/* Conditional Fields */}
-                {formData.helpType === 'partnership' && (
-                  <div>
-                    <label htmlFor="businessName" className="block text-text-secondary mb-2">
-                      Business Name
-                    </label>
-                    <input
-                      type="text"
-                      id="businessName"
-                      value={formData.businessName}
-                      onChange={(e) => setFormData({ ...formData, businessName: e.target.value })}
-                      className="w-full p-4 bg-background-card border border-ui-border text-text-primary focus:border-accent-primary transition-colors"
-                      placeholder="Your business name"
-                    />
-                  </div>
-                )}
+                {/* Business Name (Optional) */}
+                <div>
+                  <label htmlFor="businessName" className="block text-text-secondary mb-2">
+                    Business Name (if applicable)
+                  </label>
+                  <input
+                    type="text"
+                    id="businessName"
+                    value={formData.businessName}
+                    onChange={(e) => setFormData({ ...formData, businessName: e.target.value })}
+                    className="w-full p-4 bg-background-card border border-ui-border text-text-primary focus:border-accent-primary transition-colors"
+                    placeholder="Your business name"
+                  />
+                </div>
 
                 {/* Message */}
                 <div>
@@ -271,7 +272,7 @@ export default function Contact() {
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     className="w-full p-4 bg-background-card border border-ui-border text-text-primary focus:border-accent-primary transition-colors h-32"
-                    placeholder="How can we help you?"
+                    placeholder="Tell us about your goals and how we can help..."
                     required
                   />
                 </div>
@@ -295,23 +296,45 @@ export default function Contact() {
             <div className="space-y-12">
               <div className="grid grid-cols-1 gap-6">
                 {QUICK_LINKS.map((link, index) => (
-                  <Link
-                    key={index}
-                    to={link.link}
-                    className="p-6 bg-background-card border border-ui-border hover:border-accent-primary transition-colors group"
-                  >
-                    <div className="flex items-start gap-4">
-                      <link.icon className={`h-8 w-8 ${link.color}`} />
-                      <div>
-                        <h3 className="text-lg font-bold text-text-primary mb-2 group-hover:text-accent-primary transition-colors">
-                          {link.title}
-                        </h3>
-                        <p className="text-text-secondary">
-                          {link.description}
-                        </p>
+                  link.link.startsWith('http') ? (
+                    <a
+                      key={index}
+                      href={link.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-6 bg-background-card border border-ui-border hover:border-accent-primary transition-colors group"
+                    >
+                      <div className="flex items-start gap-4">
+                        <link.icon className={`h-8 w-8 ${link.color}`} />
+                        <div>
+                          <h3 className="text-lg font-bold text-text-primary mb-2 group-hover:text-accent-primary transition-colors">
+                            {link.title}
+                          </h3>
+                          <p className="text-text-secondary">
+                            {link.description}
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                  </Link>
+                    </a>
+                  ) : (
+                    <Link
+                      key={index}
+                      to={link.link}
+                      className="p-6 bg-background-card border border-ui-border hover:border-accent-primary transition-colors group"
+                    >
+                      <div className="flex items-start gap-4">
+                        <link.icon className={`h-8 w-8 ${link.color}`} />
+                        <div>
+                          <h3 className="text-lg font-bold text-text-primary mb-2 group-hover:text-accent-primary transition-colors">
+                            {link.title}
+                          </h3>
+                          <p className="text-text-secondary">
+                            {link.description}
+                          </p>
+                        </div>
+                      </div>
+                    </Link>
+                  )
                 ))}
               </div>
 
@@ -321,8 +344,7 @@ export default function Contact() {
                   Fast Response Guaranteed
                 </h3>
                 <p className="text-text-secondary">
-                  We reply to all messages within 24-48 hours during business days.
-                  You're talking to real people who understand fitness and business.
+                  We respond to all messages within 24-48 hours during business days. You're talking to real business coaches with real-world experience building and scaling successful companies.
                 </p>
               </div>
             </div>

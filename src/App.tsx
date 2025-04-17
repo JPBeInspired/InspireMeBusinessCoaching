@@ -6,16 +6,10 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import Products from './pages/Products';
-import ProductDetail from './pages/ProductDetail';
-import ServiceDetail from './pages/ServiceDetail';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
-import Careers from './pages/Careers';
-import JobDetail from './pages/JobDetail';
 import AdminLogin from './pages/admin/Login';
 import AdminDashboard from './pages/admin/Dashboard';
-import JobForm from './pages/admin/JobForm';
 import BlogForm from './pages/admin/BlogForm';
 import { PromotionalProvider, usePromotional } from './contexts/PromotionalContext';
 import { ContentProvider } from './contexts/ContentContext';
@@ -40,17 +34,10 @@ function AppContent() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/products" element={<Products />} />
-            <Route path="/products/:id" element={<ProductDetail />} />
-            <Route path="/products/service/:id" element={<ServiceDetail />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
-            <Route path="/careers" element={<Careers />} />
-            <Route path="/careers/:id" element={<JobDetail />} />
             <Route path="/admin" element={<AdminLogin />} />
             <Route path="/admin/dashboard" element={<AdminDashboard />} />
-            <Route path="/admin/new-job" element={<JobForm />} />
-            <Route path="/admin/edit-job/:id" element={<JobForm />} />
             <Route path="/admin/new-blog" element={<BlogForm />} />
             <Route path="/admin/edit-blog/:id" element={<BlogForm />} />
           </Routes>
