@@ -2,7 +2,7 @@
 export const BRAND = {
   NAME: 'BE INSPIRED',
   LOGO_TEXT: 'BE INSPIRED FITNESS',
-  LOGO: 'https://i.imgur.com/BbTeAmk.png',
+  LOGO: 'https://i.imgur.com/P05kV1q.png',
   HERO_IMAGE: 'https://i.imgur.com/ww7VKq5.jpeg',
 };
 
