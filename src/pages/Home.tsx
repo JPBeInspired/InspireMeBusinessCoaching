@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { ArrowRight, BookOpen, Target, Users, BarChart, Star, Calendar, Mail, Facebook, Instagram, Linkedin, Youtube, ChevronDown, PlusCircle, Sparkles, Trophy, Brain, Video, Rocket, ArrowUpRight, ChevronRight, Plus, Minus } from 'lucide-react';
+import { ArrowRight, BookOpen, Target, Users, BarChart, Star, Calendar, Mail, Facebook, Instagram, Twitter, ChevronDown, PlusCircle, Sparkles, Trophy, Brain, Video, Rocket, ArrowUpRight, ChevronRight, Plus, Minus } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -13,25 +13,25 @@ const SERVICES = [
     title: 'Launch Your First Business',
     description: 'Step-by-step guidance to turn your idea into a thriving business.',
     icon: Target,
-    link: '/services/launch'
+    link: 'https://calendly.com/james_hunt/phone-call'
   },
   {
     title: 'Grow What You\'ve Built',
     description: 'Scale your operations and increase your market presence.',
     icon: BarChart,
-    link: '/services/grow'
+    link: 'https://calendly.com/james_hunt/phone-call'
   },
   {
     title: 'Scale & Prepare to Exit',
     description: 'Strategic planning for sustainable growth and successful exits.',
     icon: Trophy,
-    link: '/services/scale'
+    link: 'https://calendly.com/james_hunt/phone-call'
   },
   {
     title: 'Access All Tools & Courses',
     description: 'Complete library of resources, templates, and training.',
     icon: BookOpen,
-    link: '/services/resources'
+    link: 'https://www.skool.com/inspireme'
   }
 ];
 
@@ -55,30 +55,6 @@ const VALUE_PROPS = [
     icon: Users,
     title: 'Supportive Business Community',
     description: 'Network with ambitious, like-minded entrepreneurs who want to build and win together.'
-  }
-];
-
-const FEATURED_PRODUCTS = [
-  {
-    title: 'Business Launch Blueprint',
-    description: 'Complete system to start your business in 90 days or less.',
-    price: 997,
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1920',
-    tag: 'Most Popular'
-  },
-  {
-    title: 'Growth Accelerator Program',
-    description: 'Scale your business with proven systems and strategies.',
-    price: 1497,
-    image: 'https://images.unsplash.com/photo-1553729459-efe14ef6055d?auto=format&fit=crop&q=80&w=1920',
-    tag: 'Best Value'
-  },
-  {
-    title: 'Digital Marketing Mastery',
-    description: 'Generate consistent leads and sales online.',
-    price: 797,
-    image: 'https://images.unsplash.com/photo-1432888622747-4eb9a8f2c293?auto=format&fit=crop&q=80&w=1920',
-    tag: 'New'
   }
 ];
 
@@ -174,13 +150,15 @@ export default function Home() {
               We help ambitious individuals launch, grow, and scale businesses that align with their purpose, passion, and potential.
             </p>
             <div className="flex flex-wrap gap-6">
-              <Link
-                to="/services"
+              <a
+                href="https://calendly.com/james_hunt/phone-call"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center px-8 py-4 bg-accent-primary text-text-primary hover:bg-accent-hover transition-colors group"
               >
                 Start Your Business Journey
                 <ArrowRight className="ml-2 h-5 w-5 transform group-hover:translate-x-1 transition-transform" />
-              </Link>
+              </a>
               <a
                 href="https://calendly.com/james_hunt/phone-call"
                 target="_blank"
@@ -211,7 +189,7 @@ export default function Home() {
               <p className="text-text-secondary mt-2">Businesses Launched</p>
             </div>
             <div>
-              <span className="text-3xl font-bold text-accent-primary">$2.5M+</span>
+              <span className="text-3xl font-bold text-accent-primary">$112.5M+</span>
               <p className="text-text-secondary mt-2">Revenue Generated</p>
             </div>
           </div>
@@ -278,7 +256,7 @@ export default function Home() {
 
           <div className="mt-12 text-center">
             <a
-              href="https://www.skool.com/bifc/about?ref=90b36d6c2a614936b70aa82065a41863"
+              href="https://www.skool.com/inspireme"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-8 py-4 bg-accent-primary text-text-primary hover:bg-accent-hover transition-colors group"
@@ -348,51 +326,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Featured Products */}
-      <section className="py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-text-primary mb-4">Featured Products</h2>
-            <p className="text-xl text-text-secondary max-w-3xl mx-auto">
-              Start your journey with our most popular programs and resources.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {FEATURED_PRODUCTS.map((product, index) => (
-              <div
-                key={index}
-                className="group bg-background-card border border-ui-border hover:border-accent-primary transition-all duration-300"
-              >
-                <div className="relative overflow-hidden aspect-video">
-                  <img
-                    src={product.image}
-                    alt={product.title}
-                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
-                  />
-                  {product.tag && (
-                    <div className="absolute top-4 right-4 bg-accent-primary px-3 py-1 text-sm font-medium text-text-primary">
-                      {product.tag}
-                    </div>
-                  )}
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-text-primary mb-2">{product.title}</h3>
-                  <p className="text-text-secondary mb-4">{product.description}</p>
-                  <div className="flex items-center justify-between">
-                    <span className="text-2xl font-bold text-accent-primary">${product.price}</span>
-                    <button className="inline-flex items-center text-text-primary bg-accent-primary px-4 py-2 hover:bg-accent-hover transition-colors">
-                      Buy Now
-                      <ArrowRight className="ml-2 h-5 w-5" />
-                    </button>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Booking Section */}
       <section className="py-24 bg-background-section relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-background-main/50 via-transparent to-background-main/50" />
@@ -401,7 +334,7 @@ export default function Home() {
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold text-text-primary mb-6">Ready to Take the First Step?</h2>
             <p className="text-xl text-text-secondary mb-8">
-              Book a free 15-minute strategy call with our team. We'll discuss your goals and create a plan to achieve them.
+              Book a free 30-minute strategy call with our team. We'll discuss your goals and create a plan to achieve them.
             </p>
             <a
               href="https://calendly.com/james_hunt/phone-call"
@@ -495,16 +428,6 @@ export default function Home() {
               </div>
             ))}
           </div>
-
-          <div className="text-center mt-8">
-            <Link
-              to="/faq"
-              className="inline-flex items-center text-accent-primary hover:text-accent-hover"
-            >
-              View all FAQs
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
-          </div>
         </div>
       </section>
 
@@ -541,7 +464,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap items-center justify-center gap-8">
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/inspiremebusinesscoaching"
               target="_blank"
               rel="noopener noreferrer"
               className="text-text-secondary hover:text-accent-primary transition-colors"
@@ -549,7 +472,7 @@ export default function Home() {
               <Facebook className="h-6 w-6" />
             </a>
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/inspiremebusinesscoaching"
               target="_blank"
               rel="noopener noreferrer"
               className="text-text-secondary hover:text-accent-primary transition-colors"
@@ -557,24 +480,16 @@ export default function Home() {
               <Instagram className="h-6 w-6" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.x.com/inspiremebzness"
               target="_blank"
               rel="noopener noreferrer"
               className="text-text-secondary hover:text-accent-primary transition-colors"
             >
-              <Linkedin className="h-6 w-6" />
-            </a>
-            <a
-              href="https://youtube.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-text-secondary hover:text-accent-primary transition-colors"
-            >
-              <Youtube className="h-6 w-6" />
+              <Twitter className="h-6 w-6" />
             </a>
             <div className="h-8 w-px bg-ui-border mx-4" />
             <a
-              href="https://www.skool.com/bifc/about?ref=90b36d6c2a614936b70aa82065a41863"
+              href="https://www.skool.com/inspireme"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center text-text-primary bg-accent-primary px-6 py-3 hover:bg-accent-hover transition-colors"

@@ -7,57 +7,78 @@ import DynamicCounter from '../components/DynamicCounter';
 
 const TEAM = [
   {
-    name: 'James Hunt',
-    role: 'Founder',
-    image: 'https://i.imgur.com/zWOr7yy.png',
-    bio: 'Multi-business owner helping individuals escape the 9–5 and build purpose-driven companies.',
-    extended: 'With decades of entrepreneurial experience, James has guided thousands from uncertainty to clarity — and built multiple high-performing teams and coaching programs that actually scale.'
+    name: "James Hunt",
+    role: "Founder",
+    image: "https://i.imgur.com/zWOr7yy.png",
+    bio: "Multi-business owner helping individuals escape the 9-5 and build purpose-driven companies.",
+    extended: "With decades of entrepreneurial experience, James has guided thousands from uncertainty to clarity — and built multiple high-performing teams and coaching programs that actually scale."
   },
   {
-    name: 'Tatum Wilder',
-    role: 'Customer Success Manager',
-    image: 'https://i.imgur.com/JHKf5YC.png',
-    bio: 'Dedicated to ensuring clients get results, fast. From onboarding to success, she’s in your corner.',
-    extended: 'Tatum has mentored over 1,000 business owners across industries. Her mix of empathy and strategy helps people build confidence, find focus, and grow with intention.'
+    name: "Tatum Wilder",
+    role: "Customer Success Manager",
+    image: "https://i.imgur.com/JHKf5YC.png",
+    bio: "Dedicated to ensuring clients get results, fast. From onboarding to success, she is in your corner.",
+    extended: "Tatum has mentored over 1,000 business owners across industries. Her mix of empathy and strategy helps people build confidence, find focus, and grow with intention."
   },
   {
-    name: 'Isabella Bianchi',
-    role: 'Head of Finance',
-    image: 'https://i.imgur.com/fscxsRH.png',
-    bio: 'Driving smart growth through financial strategy and operational insight.',
-    extended: 'With a background in finance and corporate growth, Isabella ensures our systems are scalable and sustainable. Her work empowers our team to serve more people, more effectively.'
+    name: "Isabella Bianchi",
+    role: "Head of Finance",
+    image: "https://i.imgur.com/fscxsRH.png",
+    bio: "Driving smart growth through financial strategy and operational insight.",
+    extended: "With a background in finance and corporate growth, Isabella ensures our systems are scalable and sustainable. Her work empowers our team to serve more people, more effectively."
+  },
+  {
+    name: "Jake Powell",
+    role: "National Business Manager",
+    image: "https://i.imgur.com/bHwVB9Y.png",
+    bio: "Oversees operations, strategy, and national partnerships to support business growth across 30+ regions.",
+    extended: "From his early days managing sales and operations at Anytime Fitness to building recruitment pipelines and business development frameworks across the country, Jake has helped thousands of business thrive. He has built state-wide teams, led recruitment across multiple regions, and now shapes the national vision for the Be Inspired brand"
+  },
+  {
+    name: "James Tsmiklis",
+    role: "Business Partner",
+    image: "https://i.imgur.com/rMPU8yt.png",
+    bio: "A dynamic leader whose journey in the fitness industry reflects a deep commitment to growth, leadership, and operational excellence.",
+    extended: "Starting as a Club Manager at Anytime Fitness, James quickly rose through the ranks, becoming State Manager at IFC, where he led teams and drove performance across multiple sites. Today, he is a proud Business Partner at JIMs, overseeing all operational matters. His strength lies in building high-performing teams, mastering sales strategies, and streamlining business operations—making him an invaluable asset in any leadership environment"
+  },
+  {
+    name: "Michael Godfrey",
+    role: "Business Partner",
+    image: "https://i.imgur.com/pL4C6Q0.png",
+    bio: "Rising from Club Manager to Regional Manager before launching a co-venture — Be Inspired Digital Agency.",
+    extended: "With years of frontline experience leading clubs and teams, Michael developed a sharp eye for what drives performance, culture, and growth. Now, as the founder of Be Inspired Digital, he combines his operational know-how with cutting-edge marketing and digital strategy to help fitness businesses thrive in the modern world. "
   }
 ];
 
 const BELIEFS = [
   {
-    title: 'Freedom Through Business',
-    description: 'We believe the right business can unlock the freedom and lifestyle you truly want.',
+    title: "Freedom Through Business",
+    description: "We believe the right business can unlock the freedom and lifestyle you truly want.",
     icon: Briefcase
   },
   {
-    title: 'You Deserve Real Support',
-    description: 'Success shouldn’t be a solo journey. We combine coaching, tools, and community to help you grow.',
+    title: "You Deserve Real Support",
+    description: "Success should not be a solo journey. We combine coaching, tools, and community to help you grow.",
     icon: Users
   },
   {
-    title: 'Clarity Beats Complexity',
-    description: 'Our job is to simplify the process — so you can take action with confidence.',
+    title: "Clarity Beats Complexity",
+    description: "Our job is to simplify the process — so you can take action with confidence.",
     icon: Brain
   },
   {
-    title: 'Adapt or Stay Stuck',
-    description: 'We evolve with the market. You’ll always have relevant strategies that work today — not 10 years ago.',
+    title: "Adapt or Stay Stuck",
+    description: "We evolve with the market. You will always have relevant strategies that work today — not 10 years ago.",
     icon: Star
   },
   {
-    title: 'Success is Holistic',
-    description: 'We help you build not just a business — but a better life. That means impact, income, and wellbeing.',
+    title: "Success is Holistic",
+    description: "We help you build not just a business — but a better life. That means impact, income, and wellbeing.",
     icon: Trophy
   },
   {
-    title: 'Global Reach, Personal Impact',
-    description: 'With clients around the world, we’re creating a ripple effect of self-made success stories.',
+    title: "Global Reach, Personal Impact",
+    description: "With clients around the world, we are creating a ripple effect of self-made success stories.",
     icon: Globe
   }
 ];
@@ -181,7 +202,7 @@ export default function About() {
 <section className="py-24 bg-background-section">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
     <h2 className="text-4xl font-bold text-text-primary mb-6">
-      Let’s Build Your Business Together
+      Let's Build Your Business Together
     </h2>
     <p className="text-xl text-text-secondary mb-12 max-w-3xl mx-auto">
       Whether you're just starting or ready to scale, our tools, coaching, and community will help you go further — faster.
