@@ -14,6 +14,20 @@ const TEAM = [
     extended: "With decades of entrepreneurial experience, James has guided thousands from uncertainty to clarity — and built multiple high-performing teams and coaching programs that actually scale."
   },
   {
+    name: "James Tsmiklis",
+    role: "Business Partner",
+    image: "https://i.imgur.com/rMPU8yt.png",
+    bio: "A multi business owner with a strong record of results and performance underpinned by strong processes, systems and a world class cutting edge approach to sales. ",
+    extended: "Starting as a Club Manager at Anytime Fitness, James quickly rose through the ranks, becoming State Manager at IFC, where he led teams and drove performance across multiple sites. Today, he is a proud Business Partner at JIMs, overseeing all operational matters. His strength lies in building high-performing teams, mastering sales strategies, and streamlining business operations—making him an invaluable asset in any leadership environment"
+  },
+  {
+    name: "Michael Godfrey",
+    role: "Business Partner",
+    image: "https://i.imgur.com/pL4C6Q0.png",
+    bio: "Mike has over 15 years experience in Business and is a multi business owner across several industries. He brings a wealth of knowledge to the team and has a passion for digital and social media in particular",
+    extended: "With years of frontline experience leading clubs and teams, Michael developed a sharp eye for what drives performance, culture, and growth. Now, as the founder of Be Inspired Digital, he combines his operational know-how with cutting-edge marketing and digital strategy to help fitness businesses thrive in the modern world. "
+  },
+  {
     name: "Talia Wilder",
     role: "Customer Success Manager",
     image: "https://i.imgur.com/JHKf5YC.png",
@@ -33,20 +47,6 @@ const TEAM = [
     image: "https://i.imgur.com/bHwVB9Y.png",
     bio: "Oversees operations, strategy, and national partnerships to support business growth across 30+ regions.",
     extended: "From his early days managing sales and operations at Anytime Fitness to building recruitment pipelines and business development frameworks across the country, Jake has helped thousands of business thrive. He has built state-wide teams, led recruitment across multiple regions, and now shapes the national vision for the Be Inspired brand"
-  },
-  {
-    name: "James Tsmiklis",
-    role: "Business Partner",
-    image: "https://i.imgur.com/rMPU8yt.png",
-    bio: "A multi business owner with a strong record of results and performance underpinned by strong processes, systems and a world class cutting edge approach to sales. ",
-    extended: "Starting as a Club Manager at Anytime Fitness, James quickly rose through the ranks, becoming State Manager at IFC, where he led teams and drove performance across multiple sites. Today, he is a proud Business Partner at JIMs, overseeing all operational matters. His strength lies in building high-performing teams, mastering sales strategies, and streamlining business operations—making him an invaluable asset in any leadership environment"
-  },
-  {
-    name: "Michael Godfrey",
-    role: "Business Partner",
-    image: "https://i.imgur.com/pL4C6Q0.png",
-    bio: "Mike has over 15 years experience in Business and is a multi business owner across several industries. He brings a wealth of knowledge to the team and has a passion for digital and social media in particular",
-    extended: "With years of frontline experience leading clubs and teams, Michael developed a sharp eye for what drives performance, culture, and growth. Now, as the founder of Be Inspired Digital, he combines his operational know-how with cutting-edge marketing and digital strategy to help fitness businesses thrive in the modern world. "
   }
 ];
 
