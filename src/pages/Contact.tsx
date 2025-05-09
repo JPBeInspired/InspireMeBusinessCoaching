@@ -53,21 +53,21 @@ const QUICK_LINKS = [
     title: 'Interested in Business Coaching?',
     description: 'Explore our coaching programs and find the right path for your business.',
     icon: Users,
-    link: '/services',
+    link: 'https://calendly.com/james_hunt/phone-call',
     color: 'text-accent-primary'
   },
   {
     title: 'Need Help Starting or Scaling?',
     description: "Let's talk strategy, systems, and how we can support your next step.",
     icon: Briefcase,
-    link: '/services',
+    link: 'https://calendly.com/james_hunt/phone-call',
     color: 'text-alt-purple'
   },
   {
     title: 'Want to Join Our Community?',
     description: 'Connect with other ambitious business owners inside our coaching hub.',
     icon: Star,
-    link: 'https://www.skool.com/bifc/about?ref=90b36d6c2a614936b70aa82065a41863',
+    link: 'https://www.skool.com/inspireme',
     color: 'text-alt-coral'
   }
 ];

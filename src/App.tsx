@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { Toaster } from 'react-hot-toast';
 import { HelmetProvider } from 'react-helmet-async';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -27,9 +28,9 @@ function AppContent() {
   return (
     <Router>
       <ScrollToTop />
-      <div className="min-h-screen bg-background-main">
+      <div className="min-h-screen bg-background-main flex flex-col">
         <Navbar />
-        <main>
+        <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
@@ -42,6 +43,7 @@ function AppContent() {
             <Route path="/admin/edit-blog/:id" element={<BlogForm />} />
           </Routes>
         </main>
+        <Footer />
         <PromotionalBanner />
         <Toaster position="top-right" />
       </div>
