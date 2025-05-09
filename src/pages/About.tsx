@@ -10,7 +10,7 @@ const TEAM = [
     name: "James Hunt",
     role: "Founder",
     image: "https://i.imgur.com/zWOr7yy.png",
-    bio: "Multi-business owner helping individuals escape the 9-5 and build purpose-driven companies.",
+    bio: "Serial entrepreneur with over 20 businesses under my belt, including scaling ventures to $100M+ and selling companies for 8-figure exits. I help driven individuals break free from the 9–5 and build impactful, purpose-driven businesses — the kind that create real freedom and lasting value.",
     extended: "With decades of entrepreneurial experience, James has guided thousands from uncertainty to clarity — and built multiple high-performing teams and coaching programs that actually scale."
   },
   {
@@ -38,14 +38,14 @@ const TEAM = [
     name: "James Tsmiklis",
     role: "Business Partner",
     image: "https://i.imgur.com/rMPU8yt.png",
-    bio: "A dynamic leader whose journey in the fitness industry reflects a deep commitment to growth, leadership, and operational excellence.",
+    bio: "A multi business owner with a strong record of results and performance underpinned by strong processes, systems and a world class cutting edge approach to sales. ",
     extended: "Starting as a Club Manager at Anytime Fitness, James quickly rose through the ranks, becoming State Manager at IFC, where he led teams and drove performance across multiple sites. Today, he is a proud Business Partner at JIMs, overseeing all operational matters. His strength lies in building high-performing teams, mastering sales strategies, and streamlining business operations—making him an invaluable asset in any leadership environment"
   },
   {
     name: "Michael Godfrey",
     role: "Business Partner",
     image: "https://i.imgur.com/pL4C6Q0.png",
-    bio: "Rising from Club Manager to Regional Manager before launching a co-venture — Be Inspired Digital Agency.",
+    bio: "Mike has over 15 years experience in Business and is a multi business owner across several industries. He brings a wealth of knowledge to the team and has a passion for digital and social media in particular",
     extended: "With years of frontline experience leading clubs and teams, Michael developed a sharp eye for what drives performance, culture, and growth. Now, as the founder of Be Inspired Digital, he combines his operational know-how with cutting-edge marketing and digital strategy to help fitness businesses thrive in the modern world. "
   }
 ];
