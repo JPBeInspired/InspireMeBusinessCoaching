@@ -90,7 +90,7 @@ const FAQS = [
   },
   {
     question: 'What support do I get?',
-    answer: 'You\'ll have access to weekly group coaching calls, our complete resource library, private community, and direct messaging support through our platform.'
+    answer: 'We offer everything from one-off strategy consults to full-scale coaching and ongoing support, to full blown management if you want! We are here to ensure your sucess! \n\nInside our Skool community, you\'ll get access to over 50 mini courses, weekly live coaching sessions, and a full library of tools, resources, and products — all designed to help you succeed.'
   }
 ];
 

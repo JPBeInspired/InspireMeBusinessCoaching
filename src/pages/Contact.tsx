@@ -150,146 +150,26 @@ export default function Contact() {
       <section id="enquiry-form" className="py-16 bg-background-section scroll-mt-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-            {/* Form */}
+            {/* Embedded GHL Form */}
             <div>
-              <form onSubmit={handleSubmit} className="space-y-8">
-                {/* Who are you? */}
-                <div>
-                  <label className="block text-text-secondary mb-4">Who are you?</label>
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    {CONTACT_TYPES.map((type) => (
-                      <button
-                        key={type.id}
-                        type="button"
-                        onClick={() => setContactType(type.id)}
-                        className={`p-6 flex flex-col items-center justify-center border text-center transition-colors ${
-                          contactType === type.id
-                            ? 'border-accent-primary bg-background-card'
-                            : 'border-ui-border hover:border-accent-primary'
-                        }`}
-                      >
-                        <type.icon className={`h-8 w-8 mb-3 ${
-                          contactType === type.id ? 'text-accent-primary' : 'text-text-secondary'
-                        }`} />
-                        <span className="text-text-primary font-medium mb-2">{type.label}</span>
-                        <span className="text-text-secondary text-sm">{type.description}</span>
-                      </button>
-                    ))}
-                  </div>
-                </div>
-
-                {/* How can we help? */}
-                {contactType && (
-                  <div>
-                    <label htmlFor="helpType" className="block text-text-secondary mb-2">
-                      How can we help?
-                    </label>
-                    <select
-                      id="helpType"
-                      value={formData.helpType}
-                      onChange={(e) => setFormData({ ...formData, helpType: e.target.value })}
-                      className="w-full p-4 bg-background-card border border-ui-border text-text-primary focus:border-accent-primary transition-colors"
-                      required
-                    >
-                      <option value="">Select an option</option>
-                      {HELP_OPTIONS[contactType as keyof typeof HELP_OPTIONS].map((option) => (
-                        <option key={option.value} value={option.value}>
-                          {option.label}
-                        </option>
-                      ))}
-                    </select>
-                  </div>
-                )}
-
-                {/* Contact Details */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  <div className="md:col-span-1">
-                    <label htmlFor="name" className="block text-text-secondary mb-2">
-                      Name
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full p-4 bg-background-card border border-ui-border text-text-primary focus:border-accent-primary transition-colors"
-                      placeholder="Your name"
-                      required
-                    />
-                  </div>
-                  <div className="md:col-span-1">
-                    <label htmlFor="email" className="block text-text-secondary mb-2">
-                      Email
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full p-4 bg-background-card border border-ui-border text-text-primary focus:border-accent-primary transition-colors"
-                      placeholder="your@email.com"
-                      required
-                    />
-                  </div>
-                  <div className="md:col-span-1">
-                    <label htmlFor="phone" className="block text-text-secondary mb-2">
-                      Phone Number
-                    </label>
-                    <input
-                      type="tel"
-                      id="phone"
-                      value={formData.phone}
-                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      className="w-full p-4 bg-background-card border border-ui-border text-text-primary focus:border-accent-primary transition-colors"
-                      placeholder="Your phone number"
-                      required
-                    />
-                  </div>
-                </div>
-
-                {/* Business Name (Optional) */}
-                <div>
-                  <label htmlFor="businessName" className="block text-text-secondary mb-2">
-                    Business Name (if applicable)
-                  </label>
-                  <input
-                    type="text"
-                    id="businessName"
-                    value={formData.businessName}
-                    onChange={(e) => setFormData({ ...formData, businessName: e.target.value })}
-                    className="w-full p-4 bg-background-card border border-ui-border text-text-primary focus:border-accent-primary transition-colors"
-                    placeholder="Your business name"
-                  />
-                </div>
-
-                {/* Message */}
-                <div>
-                  <label htmlFor="message" className="block text-text-secondary mb-2">
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    className="w-full p-4 bg-background-card border border-ui-border text-text-primary focus:border-accent-primary transition-colors h-32"
-                    placeholder="Tell us about your goals and how we can help..."
-                    required
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  disabled={loading}
-                  className="w-full py-4 bg-accent-primary text-text-primary hover:bg-accent-hover transition-colors flex items-center justify-center group disabled:opacity-50 disabled:cursor-not-allowed"
-                >
-                  {loading ? 'Sending...' : (
-                    <>
-                      Send Message
-                      <ArrowRight className="ml-2 h-5 w-5 transform group-hover:translate-x-1 transition-transform" />
-                    </>
-                  )}
-                </button>
-              </form>
+              <iframe
+                src="https://api.leadconnectorhq.com/widget/form/hFsenhFOZmlMMwyN1thU"
+                style={{ width: '100%', height: '1000px', border: 'none', borderRadius: '4px' }}
+                id="inline-hFsenhFOZmlMMwyN1thU"
+                data-layout="{'id':'INLINE'}"
+                data-trigger-type="alwaysShow"
+                data-trigger-value=""
+                data-activation-type="alwaysActivated"
+                data-activation-value=""
+                data-deactivation-type="neverDeactivate"
+                data-deactivation-value=""
+                data-form-name="Contact Us"
+                data-height="1000"
+                data-layout-iframe-id="inline-hFsenhFOZmlMMwyN1thU"
+                data-form-id="hFsenhFOZmlMMwyN1thU"
+                title="Contact Us"
+              />
+              <script src="https://link.msgsndr.com/js/form_embed.js"></script>
             </div>
 
             {/* Quick Links */}

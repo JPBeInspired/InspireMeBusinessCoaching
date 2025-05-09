@@ -14,7 +14,7 @@ const TEAM = [
     extended: "With decades of entrepreneurial experience, James has guided thousands from uncertainty to clarity — and built multiple high-performing teams and coaching programs that actually scale."
   },
   {
-    name: "Tatum Wilder",
+    name: "Talia Wilder",
     role: "Customer Success Manager",
     image: "https://i.imgur.com/JHKf5YC.png",
     bio: "Dedicated to ensuring clients get results, fast. From onboarding to success, she is in your corner.",
