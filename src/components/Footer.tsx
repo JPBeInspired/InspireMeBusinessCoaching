@@ -15,14 +15,14 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-accent-primary" />
-                <a href="mailto:admin@beinspired.group" className="text-text-secondary hover:text-accent-primary transition-colors">
+                <a href="mailto:@beinspired.group" className="text-text-secondary hover:text-accent-primary transition-colors">
                   contact@beinspired.group
                 </a>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-accent-primary" />
-                <a href="tel:0400000000" className="text-text-secondary hover:text-accent-primary transition-colors">
-                  0400 000 000
+                <a href="tel:0422 691 919" className="text-text-secondary hover:text-accent-primary transition-colors">
+                  0422 691 919
                 </a>
               </div>
             </div>
