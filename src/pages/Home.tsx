@@ -13,25 +13,25 @@ const SERVICES = [
     title: 'Launch Your First Business',
     description: 'Step-by-step guidance to turn your idea into a thriving business.',
     icon: Target,
-    link: 'https://calendly.com/james_hunt/phone-call'
+    link: 'https://api.leadconnectorhq.com/widget/bookings/halfhourpower'
   },
   {
     title: 'Grow What You\'ve Built',
     description: 'Scale your operations and increase your market presence.',
     icon: BarChart,
-    link: 'https://calendly.com/james_hunt/phone-call'
+    link: 'https://api.leadconnectorhq.com/widget/bookings/halfhourpower'
   },
   {
     title: 'Scale & Prepare to Exit',
     description: 'Strategic planning for sustainable growth and successful exits.',
     icon: Trophy,
-    link: 'https://calendly.com/james_hunt/phone-call'
+    link: 'https://api.leadconnectorhq.com/widget/bookings/halfhourpower'
   },
   {
     title: 'Access All Tools & Courses',
     description: 'Complete library of resources, templates, and training.',
     icon: BookOpen,
-    link: 'https://www.skool.com/inspireme'
+    link: 'https://api.leadconnectorhq.com/widget/bookings/halfhourpower'
   }
 ];
 
@@ -151,7 +151,7 @@ export default function Home() {
             </p>
             <div className="flex flex-wrap gap-6">
               <a
-                href="https://calendly.com/james_hunt/phone-call"
+                href="https://api.leadconnectorhq.com/widget/bookings/halfhourpower"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-8 py-4 bg-accent-primary text-text-primary hover:bg-accent-hover transition-colors group"
@@ -160,7 +160,7 @@ export default function Home() {
                 <ArrowRight className="ml-2 h-5 w-5 transform group-hover:translate-x-1 transition-transform" />
               </a>
               <a
-                href="https://calendly.com/james_hunt/phone-call"
+                href="https://api.leadconnectorhq.com/widget/bookings/halfhourpower"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-8 py-4 border-2 border-text-primary text-text-primary hover:bg-text-primary hover:text-background-main transition-colors"
@@ -337,7 +337,7 @@ export default function Home() {
               Book a free 30-minute strategy call with our team. We'll discuss your goals and create a plan to achieve them.
             </p>
             <a
-              href="https://calendly.com/james_hunt/phone-call"
+              href="https://api.leadconnectorhq.com/widget/bookings/halfhourpower"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-8 py-4 bg-accent-primary text-text-primary hover:bg-accent-hover transition-colors group"

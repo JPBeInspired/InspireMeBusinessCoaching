@@ -216,7 +216,7 @@ export default function About() {
     </p>
     <div className="flex justify-center">
       <a
-        href="https://calendly.com/james_hunt/phone-call"
+        href="https://api.leadconnectorhq.com/widget/bookings/halfhourpower"
         target="_blank"
         rel="noopener noreferrer"
         className="px-8 py-4 bg-accent-primary text-text-primary hover:bg-accent-hover transition-colors"
