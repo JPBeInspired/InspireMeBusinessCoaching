@@ -14,6 +14,13 @@ const TEAM = [
     extended: "With decades of entrepreneurial experience, James has guided thousands from uncertainty to clarity — and built multiple high-performing teams and coaching programs that actually scale."
   },
   {
+    name: "Jason Santiago",
+    role: "Business Partner",
+    image: "https://i.imgur.com/OS8XCxz.png",
+    bio: "With nearly 20 years in business, Jason has founded and scaled five companies, driving record growth across startups and franchises. His edge? A deep passion for helping people succeed—through leadership, mentorship, and building high-performance teams.",
+    extended: "With nearly 20 years in business, Jason has started, bought and founded five companies, expanded interstate, set records along the way, and thrived in both franchising and start ups. He believes people are the key to success and brings deep expertise for our clients to tap into."
+  },
+  {
     name: "James Tsmiklis",
     role: "Business Partner",
     image: "https://i.imgur.com/rMPU8yt.png",
