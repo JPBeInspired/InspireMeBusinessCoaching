@@ -26,6 +26,7 @@ export default function Navbar() {
   const navigation = [
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
+    { name: 'Products', href: 'https://store.inspiremebusinesscoaching.com/products-list', external: true },
     { name: 'Blog', href: '/blog' },
     { name: 'Contact', href: '/contact' },
   ];
@@ -54,17 +55,31 @@ export default function Navbar() {
 
           <div className="hidden md:flex items-center space-x-8">
             {navigation.map((item) => (
-              <Link
-                key={item.name}
-                to={item.href}
-                className={`text-sm font-medium tracking-wider transition-colors ${
-                  location.pathname === item.href
-                    ? 'text-accent-primary'
-                    : 'text-text-primary hover:text-accent-primary'
-                }`}
-              >
-                {item.name}
-              </Link>
+              item.external ? (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className={`text-sm font-medium tracking-wider transition-colors ${
+                    location.pathname === item.href
+                      ? 'text-accent-primary'
+                      : 'text-text-primary hover:text-accent-primary'
+                  }`}
+                >
+                  {item.name}
+                </a>
+              ) : (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className={`text-sm font-medium tracking-wider transition-colors ${
+                    location.pathname === item.href
+                      ? 'text-accent-primary'
+                      : 'text-text-primary hover:text-accent-primary'
+                  }`}
+                >
+                  {item.name}
+                </Link>
+              )
             ))}
           </div>
 
@@ -83,18 +98,33 @@ export default function Navbar() {
           <div className="md:hidden bg-background-section border-t border-ui-border">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className={`block px-3 py-2 text-base font-medium transition-colors ${
-                    location.pathname === item.href
-                      ? 'text-accent-primary bg-background-card'
-                      : 'text-text-primary hover:bg-background-card hover:text-accent-primary'
-                  }`}
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.name}
-                </Link>
+                item.external ? (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className={`block px-3 py-2 text-base font-medium transition-colors ${
+                      location.pathname === item.href
+                        ? 'text-accent-primary bg-background-card'
+                        : 'text-text-primary hover:bg-background-card hover:text-accent-primary'
+                    }`}
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.name}
+                  </a>
+                ) : (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    className={`block px-3 py-2 text-base font-medium transition-colors ${
+                      location.pathname === item.href
+                        ? 'text-accent-primary bg-background-card'
+                        : 'text-text-primary hover:bg-background-card hover:text-accent-primary'
+                    }`}
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                )
               ))}
             </div>
           </div>
