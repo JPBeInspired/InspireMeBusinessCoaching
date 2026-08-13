@@ -28,11 +28,11 @@ const TEAM = [
     extended: "Starting as a Club Manager at Anytime Fitness, James quickly rose through the ranks, becoming State Manager at IFC, where he led teams and drove performance across multiple sites. Today, he is a proud Business Partner at JIMs, overseeing all operational matters. His strength lies in building high-performing teams, mastering sales strategies, and streamlining business operations—making him an invaluable asset in any leadership environment"
   },
   {
-    name: "Michael Godfrey",
-    role: "Business Partner",
-    image: "https://i.imgur.com/pL4C6Q0.png",
-    bio: "Mike has over 15 years experience in Business and is a multi business owner across several industries. He brings a wealth of knowledge to the team and has a passion for digital and social media in particular",
-    extended: "With years of frontline experience leading clubs and teams, Michael developed a sharp eye for what drives performance, culture, and growth. Now, as the founder of Be Inspired Digital, he combines his operational know-how with cutting-edge marketing and digital strategy to help fitness businesses thrive in the modern world. "
+    name: "Dakota Wright",
+    role: "Social Media Manager",
+    image: "https://images.unsplash.com/photo-1611926653458-09294b3142bf?auto=format&fit=crop&q=80&w=1200",
+    bio: "Dakota leads social media strategy, content planning, and community engagement for Inspire Me, helping the brand show up consistently and connect with the right audience.",
+    extended: "With a sharp eye for digital trends, campaign storytelling, and audience growth, Dakota turns brand ideas into social content that is clear, engaging, and aligned with the Inspire Me mission."
   },
   {
     name: "Talia Wilder",
