@@ -190,10 +190,10 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {TEAM.map((member, index) => (
               <div key={index} className="group">
-                <div className="relative overflow-hidden mb-6">
-                  <img src={member.image} alt={member.name} className="w-full aspect-square object-cover" />
-                  <div className="absolute inset-0 bg-accent-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-6 flex items-center justify-center">
-                    <p className="text-text-primary text-center">{member.extended}</p>
+                <div className="relative mx-auto mb-6 h-56 w-56 overflow-hidden rounded-full border border-accent-primary/40 bg-background-card shadow-lg shadow-black/20 md:h-60 md:w-60">
+                  <img src={member.image} alt={member.name} className="h-full w-full object-cover" />
+                  <div className="absolute inset-0 rounded-full bg-accent-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-6 flex items-center justify-center">
+                    <p className="text-sm leading-relaxed text-text-primary text-center">{member.extended}</p>
                   </div>
                 </div>
                 <h3 className="text-xl font-bold text-text-primary mb-1">{member.name}</h3>
