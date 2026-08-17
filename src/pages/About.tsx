@@ -31,6 +31,7 @@ const TEAM = [
     name: "Dakota Wright",
     role: "Social Media Manager",
     image: "/images/team/dakota-wright.png",
+    imagePosition: "center 30%",
     bio: "Dakota leads social media strategy, content planning, and community engagement for Inspire Me, helping the brand show up consistently and connect with the right audience.",
     extended: "With a sharp eye for digital trends, campaign storytelling, and audience growth, Dakota turns brand ideas into social content that is clear, engaging, and aligned with the Inspire Me mission."
   },
@@ -191,7 +192,7 @@ export default function About() {
             {TEAM.map((member, index) => (
               <div key={index} className="group">
                 <div className="relative mx-auto mb-6 h-56 w-56 overflow-hidden rounded-full border border-accent-primary/40 bg-background-card shadow-lg shadow-black/20 md:h-60 md:w-60">
-                  <img src={member.image} alt={member.name} className="h-full w-full object-cover" />
+                  <img src={member.image} alt={member.name} className="h-full w-full object-cover" style={{ objectPosition: member.imagePosition ?? 'center center' }} />
                   <div className="absolute inset-0 rounded-full bg-accent-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-6 flex items-center justify-center">
                     <p className="text-sm leading-relaxed text-text-primary text-center">{member.extended}</p>
                   </div>
