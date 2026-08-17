@@ -30,7 +30,7 @@ const TEAM = [
   {
     name: "Dakota Wright",
     role: "Social Media Manager",
-    image: "https://images.unsplash.com/photo-1611926653458-09294b3142bf?auto=format&fit=crop&q=80&w=1200",
+    image: "/images/team/dakota-wright.png",
     bio: "Dakota leads social media strategy, content planning, and community engagement for Inspire Me, helping the brand show up consistently and connect with the right audience.",
     extended: "With a sharp eye for digital trends, campaign storytelling, and audience growth, Dakota turns brand ideas into social content that is clear, engaging, and aligned with the Inspire Me mission."
   },
