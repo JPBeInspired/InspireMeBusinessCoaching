@@ -62,19 +62,16 @@ const TESTIMONIALS = [
   {
     name: "Sarah Johnson",
     role: "E-commerce Founder",
-    image: "https://i.imgur.com/7xwIJzD.png",
     quote: "The structured approach and ongoing support from Inspire Me helped me launch my business in just 8 weeks. Now we're doing $50K+ monthly."
   },
   {
     name: "Michael Chen",
     role: "Tech Startup CEO",
-    image: "https://i.imgur.com/vdIMUVg.png",
     quote: "Their scaling strategies and expert network were game-changers. We've tripled our revenue and expanded to three new markets."
   },
   {
     name: "Emma Roberts",
     role: "Service Business Owner",
-    image: "https://i.imgur.com/dFGJkQN.png",
     quote: "The community and weekly coaching kept me accountable and helped me overcome every obstacle in my business journey."
   }
 ];
@@ -374,16 +371,9 @@ export default function Home() {
             {TESTIMONIALS.map((testimonial, index) => (
               <SwiperSlide key={index}>
                 <div className="bg-background-card p-8 border border-ui-border h-full">
-                  <div className="flex items-center gap-4 mb-6">
-                    <img
-                      src={testimonial.image}
-                      alt={testimonial.name}
-                      className="w-12 h-12 rounded-full object-cover"
-                    />
-                    <div>
-                      <h3 className="font-bold text-text-primary">{testimonial.name}</h3>
-                      <p className="text-text-secondary text-sm">{testimonial.role}</p>
-                    </div>
+                  <div className="mb-6">
+                    <h3 className="font-bold text-text-primary">{testimonial.name}</h3>
+                    <p className="text-text-secondary text-sm">{testimonial.role}</p>
                   </div>
                   <p className="text-text-secondary italic">{testimonial.quote}</p>
                 </div>

@@ -81,7 +81,7 @@ const SERVICES = {
     price: 0,
     rating: 5.0,
     usersCount: 75,
-    image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=1920',
+    image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=1920',
     description: 'Transform your PT department with our complete management solution. We handle everything from recruitment to ongoing development, operating on a revenue-share model that ensures our success is tied to yours.',
     features: [
       {
@@ -152,7 +152,7 @@ const SERVICES = {
     price: 1499,
     rating: 4.8,
     usersCount: 120,
-    image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=1920',
+    image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=80&w=1920',
     description: 'The perfect middle ground between full management and basic recruitment. We help you set up and train your PT team, providing three months of support to ensure success.',
     features: [
       {
